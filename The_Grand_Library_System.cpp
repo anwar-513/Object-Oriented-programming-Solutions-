@@ -12,7 +12,7 @@ protected:
     int id;
 
 public:
-    library(string tite, string authorName, int id)
+    library(string title, string authorName, int id)
     {
         this->title = title;
         this->authorName = authorName;
@@ -37,8 +37,8 @@ public:
     book(string title, string author, string genre, int id, int pageNo)
         : library(title, author, id)
     {
-        this->authorName  = author;
-        this->NoOfPage = pageNo;
+        authorName  = author;
+        NoOfPage = pageNo;
     }
 
     void display() override
@@ -122,4 +122,5 @@ int main()
     
     return 0;
 }
+
 
